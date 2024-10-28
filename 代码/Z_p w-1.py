@@ -13,9 +13,11 @@ def get_w_1(p):
     res = {0:"-"}
     for i in range(1,p):
         _,x,y = g.extended_gcd(p,i)
+        while y < 0:
+            y += p 
         res[i] = y 
     return res 
 
 if __name__ == "__main__":
-    print(get_w_1(7))
+    print(get_w_1(97))
 

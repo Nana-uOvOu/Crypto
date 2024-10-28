@@ -12,7 +12,7 @@ def get_w_1(p):
         return -1
     res = {0:"-"}
     for i in range(1,p):
-        x,y = g.extended_gcd(p,i)
+        _,x,y = g.extended_gcd(p,i)
         res[i] = y 
     return res 
 

@@ -19,5 +19,5 @@ def get_w_1(p):
     return res 
 
 if __name__ == "__main__":
-    print(get_w_1(97))
+    print(get_w_1(8761))
 

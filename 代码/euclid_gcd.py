@@ -14,20 +14,20 @@ def extended_gcd(a,b):
     while r != 0:
         r = a % b
         q = a // b
+       
         if r == 0:
             return b, x[len(x)-1], y[len(y)-1]
         a = b
         b = r
         x.append(x[i-2] - q * x[i-1])
         y.append(y[i-2] - q * y[i-1])
+        print(f"{i-1}:a={a},b={b}")
+        print(f"{i-1}:x={x[i]},y={y[i]},q={q},r={r}")
         i += 1
+        
 
 
 
 
 if __name__ == '__main__':
-    a = 1160718174
-    b = 316258250
-    print(gcd(a,b))
-
-    print(extended_gcd(3,8))
+    print(extended_gcd(11,5))

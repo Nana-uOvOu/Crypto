@@ -220,9 +220,9 @@ def DES(plain_text, key, mode="enc"):
             
         
 if __name__ == "__main__":
-    plain_text = "Fzy is a BIG PIG!!!"
+    plain_text = "FFFZZZYYYIIISSSAAABBBIIIGGGPPPIIIGGG!!!"
     encrypted_text = DES(plain_text, "CongMing", "enc")
-    dec_text = DES(encrypted_text, "CongMin", 'dec')
+    dec_text = DES(encrypted_text, "CongMing", 'dec')
     print(f"Encrypted: {encrypted_text}")
     print(f"Decrypted: {dec_text}")
 

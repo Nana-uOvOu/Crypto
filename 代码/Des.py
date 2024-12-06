@@ -225,5 +225,5 @@ if __name__ == "__main__":
     dec_text = DES(encrypted_text, "CongMing", 'dec')
     print(f"Encrypted: {encrypted_text}")
     print(f"Decrypted: {dec_text}")
-
+    print("".join(reversed("flask\"eval(print(3))")))
     

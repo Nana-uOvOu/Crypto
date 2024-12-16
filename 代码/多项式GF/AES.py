@@ -63,4 +63,4 @@ if __name__ == "__main__":
     print(f"add={a+b}")
     print(f"a*b={a*b}")
     for key in mul_inverse_table.keys():
-        print(f"table[{key}]={"".join(mul_inverse_table[key].para)}")
+        print(f"table[{key}]={''.join(mul_inverse_table[key].para)}")

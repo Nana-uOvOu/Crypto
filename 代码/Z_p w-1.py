@@ -1,3 +1,8 @@
+'''
+Z_p下的乘法逆元
+'''
+
+
 import euclid_gcd as g
 def isPrime(p):
     if p % 2 == 0:
